@@ -1,0 +1,130 @@
+
+
+header {
+    background-color: rgba(76, 175, 80, 0.9); /* Semi-transparent green */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center; /* Center items vertically */
+    max-width: 1200px; /* Max width for header */
+    margin: auto; /* Center header on the page */
+    padding: 0 20px; /* Padding on sides */
+}
+
+.logo h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 2em; /* Logo font size */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.nav-links li {
+    display: inline-block; /* Horizontal layout for links */
+    margin-right: 20px; /* Space between links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lighten background on hover */
+}
+
+.nav-links a.active {
+    background-color: rgba(255, 255, 255, 0.5); /* Active link background color */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .nav-links li {
+        margin-right: 10px; /* Reduce space on smaller screens */
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('farm-background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent green */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px; /* Add padding around products */
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px;
+    padding: 10px;
+    width: calc(25% - 40px);
+    background-color: rgba(255, 255, 255, 0.9); /* White with some transparency */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.product h3 {
+    color: #4CAF50; /* Green color for product titles */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: calc(100% - 40px);
+    }
+}
